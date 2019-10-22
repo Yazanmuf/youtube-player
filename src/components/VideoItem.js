@@ -12,7 +12,7 @@ class VideoItem extends React.Component {
         const { id, snippet } = this.props.data;
 
         return (
-            <div className="card" style={{ width: '18rem' }}>
+            <div className="card m-2 p-2" style={{ width: '18rem' }}>
                 <img src={snippet.thumbnails.high.url} class="card-img-top" alt="..." />
                 <div className="card-body">
                     <h5 className="card-title">{snippet.title}</h5>

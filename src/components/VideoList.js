@@ -9,7 +9,7 @@ const VideoList = ({ listOfVideos, onSelect }) => {
 
 
     return (
-        <div>{renderedList}</div>
+        <div className='mt-3'>{renderedList}</div>
     )
 
 }

@@ -37,11 +37,12 @@ class App extends React.Component {
 
         return (
 
-            <div className='container col-sm-10'>
+            <div className='container '>
+                <h2 className='mt-3'>Youtube Searcher</h2>
                 <SearchBar onSubmit={this.handleSearch} />
                 {(this.state.selectedVideo)
                     ? <VideoDetail video={this.state.selectedVideo} />
-                    : <div>Loading</div>}
+                    : <div>Select a video to play</div>}
 
                 <VideoList listOfVideos={this.state.videoList} onSelect={this.handleSelect} />
             </div>

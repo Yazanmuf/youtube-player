@@ -4,9 +4,9 @@ const VideoDetail = ({ video }) => {
 
     return (
         <>
-            <div className="card" style={{ width: '40rem' }}>
+            <div className="card m-2" style={{ width: '40rem' }}>
                 <div className="embed-responsive embed-responsive-16by9">
-                    <iframe class="embed-responsive-item" src={`https://www.youtube.com/embed/${video.id.videoId}`} allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe title="embedded video" class="embed-responsive-item" src={`https://www.youtube.com/embed/${video.id.videoId}`} allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
                 <div className="card-body">
                     <h5 className="card-title">{video.snippet.title}</h5>
